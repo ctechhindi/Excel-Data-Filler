@@ -1,0 +1,53 @@
+{
+  "name": "Excel Data Filler",
+  "short_name": "Excel Data Filler",
+  "icons": [
+    {
+      "src": "favicon16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon48.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "favicon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#512da7",
+  "background_color": "#ffffff",
+  "related_applications": [
+    {
+      "platform": "chrome_web_store",
+      "url": "https://chrome.google.com/webstore/detail/fill-excel-data-cth/hbdlidnbnmkmbeompcakgedghogdbbkf?hl=en",
+      "id": "hbdlidnbnmkmbeompcakgedghogdbbkf"
+    }
+  ]
+}

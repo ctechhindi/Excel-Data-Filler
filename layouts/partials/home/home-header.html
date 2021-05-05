@@ -1,0 +1,24 @@
+<div class="bd-masthead mb-3">
+  <div class="container px-4 px-md-3 mt-5">
+    <div class="row text-center">
+      <div class="col-12">
+        <h1 class="mb-3">{{ .Site.Params.name }}</h1>
+        <p class="lead my-5">
+          {{ .Site.Params.description }}
+        </p>
+        <div class="d-flex flex-column flex-md-row justify-content-center">
+          <a href="/docs/{{ .Site.Params.docs_version }}/getting-started/introduction/" class="btn btn-lg btn-bd-primary mb-3 me-md-3">Get started</a>
+          <a href="/docs/{{ .Site.Params.docs_version }}/getting-started/download/" class="btn btn-lg btn-outline-secondary mb-3">Download</a>
+        </div>
+        <p class="text-muted mb-0">
+          Currently <strong>v{{ .Site.Params.current_version }}</strong>
+          <span class="px-1">&middot;</span>
+          <a href="/docs/versions/" class="link-secondary">Previous releases</a>
+        </p>
+      </div>
+      <div class="col-12 mt-5">
+        <iframe width="560" height="315" title="youtube" src="https://www.youtube.com/embed/YQjNpHHdYvo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>

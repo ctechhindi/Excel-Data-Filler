@@ -1,0 +1,10 @@
+{{- $name := .Get 0 -}}
+{{- $width := .Get 1 | default "" }}
+{{- $style := .Get 2 | default "" }}
+{{- with $name -}}
+{{- $url := split $.Page.File.Dir "\\" -}}
+{{- $version := index $url 1 | default $.Site.Params.docs_version -}}
+<img class="img-thumbnail mb-3 mt-3" srcset="/docs/{{$version}}/img/{{.}}" src="/docs/{{$version}}/img/{{.}}" alt="{{$name}}" width={{$width}} loading="lazy" style="{{$style}}" />
+{{- else }}
+{{ errorf "Missing param key: %s" $.Position }}
+{{ end -}}
