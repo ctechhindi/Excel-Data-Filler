@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/docs/
+RewriteRule ^(.*)$ /docs/$1 [L,R=301]
