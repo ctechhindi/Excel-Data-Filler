@@ -11,3 +11,18 @@
   pages:
     - title: Webpage
     - title: Extension
+
+- title: Page Settings
+  pages:
+    - title: Insert Site
+    - title: Export
+    - title: Import
+
+- title: Excel Data
+  pages:
+    - title: Date Format
+    - title: Download Response
+
+- title: Excel Column
+  pages:
+    - title: Predefined Column

@@ -28,3 +28,6 @@ toc: true
 
 
 ## More Options
+
+- [Webpage Settings]({{<docsref "/settings/webpage">}})
+- [Extension Settings]({{<docsref "/settings/extension">}})
