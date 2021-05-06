@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Fill Excel Sheet Data into Online Forms, Fill Input Fields, Click Button, Run Custom JS Script">
+<meta name="description" content="To do automatic data entry, on which web page we have to fill the excel data, for that we have to give the url of that web page.">
 <meta name="author" content="Jeevan Lal">
 <meta name="generator" content="Hugo 0.82.1">
 <meta name="docsearch:language" content="en">
@@ -18,7 +18,7 @@
 <meta property="og:url" content="https://formfiller.ctechhindi.in/docs/3.x/page-settings/insert-site/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Insert Site">
-<meta property="og:description" content="Fill Excel Sheet Data into Online Forms, Fill Input Fields, Click Button, Run Custom JS Script">
+<meta property="og:description" content="To do automatic data entry, on which web page we have to fill the excel data, for that we have to give the url of that web page.">
 <meta property="og:image" content="#">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1280">
@@ -27,7 +27,7 @@
 <meta name="twitter:site" content="@">
 <meta name="twitter:creator" content="@">
 <meta name="twitter:title" content="Insert Site">
-<meta name="twitter:description" content="Fill Excel Sheet Data into Online Forms, Fill Input Fields, Click Button, Run Custom JS Script">
+<meta name="twitter:description" content="To do automatic data entry, on which web page we have to fill the excel data, for that we have to give the url of that web page.">
 <meta name="twitter:image" content="#">
 
 </head>
@@ -186,6 +186,17 @@
         </div>
       </li>
       <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#excel-column-collapse" aria-expanded="false">
+          Excel Column
+        </button>
+
+        <div class="collapse" id="excel-column-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="/docs/3.x/excel-column/predefined-column/" class="d-inline-flex align-items-center rounded">Predefined Column</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
         <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#excel-data-collapse" aria-expanded="false">
           Excel Data
         </button>
@@ -194,17 +205,6 @@
           <ul class="list-unstyled fw-normal pb-1 small">
               <li><a href="/docs/3.x/excel-data/date-format/" class="d-inline-flex align-items-center rounded">Date Format</a></li>
               <li><a href="/docs/3.x/excel-data/download-response/" class="d-inline-flex align-items-center rounded">Download Response</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="mb-1">
-        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#excel-column-collapse" aria-expanded="false">
-          Excel Column
-        </button>
-
-        <div class="collapse" id="excel-column-collapse">
-          <ul class="list-unstyled fw-normal pb-1 small">
-              <li><a href="/docs/3.x/excel-column/predefined-column/" class="d-inline-flex align-items-center rounded">Predefined Column</a></li>
           </ul>
         </div>
       </li>
@@ -229,21 +229,82 @@
           <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="https://github.com/ctechhindi/Excel-Data-Filler/blob/master/content/docs/3.x/page-settings/insert-site.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
           <h1 class="bd-title" id="content">Insert Site</h1>
         </div>
-        <p class="bd-lead"></p>
+        <p class="bd-lead">To do automatic data entry, on which web page we have to fill the excel data, for that we have to give the url of that web page.</p>
         
       </div>
 
       
         <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
           <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
-          <nav id="TableOfContents"></nav>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#site-url">Site URL</a>
+      <ul>
+        <li><a href="#site-url-type">Site URL Type</a></li>
+      </ul>
+    </li>
+    <li><a href="#success-url">Success URL</a>
+      <ul>
+        <li><a href="#success-url-type">Success URL Type</a></li>
+        <li><a href="#success-message">Success Message</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
         </div>
       
 
       <div class="bd-content ps-lg-4">
         
 
-        
+        <p>To set the url of the web page, we have to open the <em>options page</em> of the extension and open the tab of the <strong>Page Settings</strong>, after this we will see a button called <strong>Insert Site</strong>, by clicking on it, we can insert the url of the webpage.</p>
+<img class="img-thumbnail mb-3 mt-3" srcset="/docs/3.x/img/insert-webpage-url.png" src="/docs/3.x/img/insert-webpage-url.png" alt="insert-webpage-url.png" width= loading="lazy" style="" />
+<h1 id="fields">Fields</h1>
+<p>To insert the url of web page, we have to fill the url data of web page in the fields given below.</p>
+<h2 id="site-url">Site URL</h2>
+<p>The <a href="https://en.wikipedia.org/wiki/URL">URL</a> of the webpage has to be given in the field of Site URL. There are two types of URLs, one which is always the same and the other which keeps changing. Therefore, we have given another field <a href="#site-url-type">Site URL Type</a> in which you can set the type of URL.</p>
+<h3 id="site-url-type">Site URL Type</h3>
+<p>In this field, you can select the url type of the web page by the options given below.</p>
+<ul>
+<li><a href="/docs/3.x/site/url-types/#full-path">Full Path</a></li>
+<li><a href="/docs/3.x/site/url-types/#locationpathname">location.pathname</a></li>
+<li><a href="/docs/3.x/site/url-types/#locationhostname">location.hostname</a></li>
+</ul>
+<h2 id="success-url">Success URL</h2>
+<p>In the field of Success URL, We have to provide the URL of the web page on which the success message of the entry is received. And after that, we have to set the URL type in the <a href="#success-url-type">Success URL Type</a> field of the web page to which the web page is getting the success message. Success message can be such as:</p>
+<ul>
+<li>The record has been saved.</li>
+<li>The record has been saved and record id is 666.</li>
+</ul>
+<p>Insert this success message in the <a href="#success-message">Success Message</a> Field.</p>
+<h3 id="success-url-type">Success URL Type</h3>
+<p>In this field, you can select the <a href="#success-url">Success URL</a> type of the web page by the options given below.</p>
+<ul>
+<li><a href="/docs/3.x/site/url-types/#full-path">Full Path</a></li>
+<li><a href="/docs/3.x/site/url-types/#locationpathname">location.pathname</a></li>
+<li><a href="/docs/3.x/site/url-types/#locationhostname">location.hostname</a></li>
+</ul>
+<h3 id="success-message">Success Message</h3>
+<p>In the field of Success Message, We have to give the message received after the entry is saved. It is not necessary in the field that you give complete success message text, you can also give some part of the message. like this:</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Received Success Message on Webpage</th>
+      <th scope="col">Insert Message in the Success Message Field</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The record has been saved.</td>
+      <td>The record has been saved.</td>
+    </tr>
+    <tr>
+      <td>The record has been saved and record id is 666.</td>
+      <td>The record has been saved</td>
+    </tr>
+  </tbody>
+</table>
+
       </div>
     </main>
   </div>

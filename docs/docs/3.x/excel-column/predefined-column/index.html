@@ -186,6 +186,17 @@
         </div>
       </li>
       <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#excel-column-collapse" aria-expanded="true" aria-current="true">
+          Excel Column
+        </button>
+
+        <div class="collapse show" id="excel-column-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="/docs/3.x/excel-column/predefined-column/" class="d-inline-flex align-items-center rounded active" aria-current="page">Predefined Column</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
         <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#excel-data-collapse" aria-expanded="false">
           Excel Data
         </button>
@@ -194,17 +205,6 @@
           <ul class="list-unstyled fw-normal pb-1 small">
               <li><a href="/docs/3.x/excel-data/date-format/" class="d-inline-flex align-items-center rounded">Date Format</a></li>
               <li><a href="/docs/3.x/excel-data/download-response/" class="d-inline-flex align-items-center rounded">Download Response</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="mb-1">
-        <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#excel-column-collapse" aria-expanded="true" aria-current="true">
-          Excel Column
-        </button>
-
-        <div class="collapse show" id="excel-column-collapse">
-          <ul class="list-unstyled fw-normal pb-1 small">
-              <li><a href="/docs/3.x/excel-column/predefined-column/" class="d-inline-flex align-items-center rounded active" aria-current="page">Predefined Column</a></li>
           </ul>
         </div>
       </li>
@@ -236,14 +236,47 @@
       
         <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
           <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
-          <nav id="TableOfContents"></nav>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#page_loaded"><code>page_loaded</code></a></li>
+    <li><a href="#fill_action"><code>fill_action</code></a></li>
+    <li><a href="#form_filled"><code>form_filled</code></a></li>
+    <li><a href="#entry_saved"><code>entry_saved</code></a></li>
+    <li><a href="#background_response"><code>background_response</code></a></li>
+    <li><a href="#element_exists"><code>element_exists</code></a></li>
+    <li><a href="#save_response_message"><code>save_response_message</code></a></li>
+    <li><a href="#error_messages"><code>error_messages</code></a></li>
+    <li><a href="#status"><code>status</code></a></li>
+    <li><a href="#isloading"><code>isLoading</code></a></li>
+    <li><a href="#totalerrorrequest"><code>totalErrorRequest</code></a></li>
+  </ul>
+</nav>
         </div>
       
 
       <div class="bd-content ps-lg-4">
         
 
-        
+        <h2 id="page_loaded"><code>page_loaded</code></h2>
+<p>After the page is fully loaded, you can give your Custom Script.</p>
+<h2 id="fill_action"><code>fill_action</code></h2>
+<p>If you do not want Automatic Form filling or your form opens after any request, then you can place Javascript event in any HTML Element in the page.</p>
+<h2 id="form_filled"><code>form_filled</code></h2>
+<p>After the form is successfully filled, you can give what script you want to run.</p>
+<h2 id="entry_saved"><code>entry_saved</code></h2>
+<p>After the form is successfully saved, you can give what script you want to run.</p>
+<h2 id="background_response"><code>background_response</code></h2>
+<p>If Request Run is being done in Background After this, if a success message is received.</p>
+<h2 id="element_exists"><code>element_exists</code></h2>
+<p>Form will start filled when this element is visible.</p>
+<h2 id="save_response_message"><code>save_response_message</code></h2>
+<p>Save Entry Response Message Data in the Excel Sheet Column [Entry Response Message - {0-9}].</p>
+<h2 id="error_messages"><code>error_messages</code></h2>
+<p>If the error message matches while filling the entry, then the entry will skip and the error will be added to the Excel sheet. [Entry Error Message - {0-9}].</p>
+<h2 id="status"><code>status</code></h2>
+<h2 id="isloading"><code>isLoading</code></h2>
+<h2 id="totalerrorrequest"><code>totalErrorRequest</code></h2>
+
       </div>
     </main>
   </div>
