@@ -24,3 +24,5 @@ After this, the excel sheet will be downloaded, according to the fields of the f
 {{</callout>}}
 
 ## Manually
+
+To manually create an Excel sheet, you have to create a new excel file in PC and insert the data as a table in the first sheet and how to create the columns of table can be seen from [this link]({{<docsref "/excel-column/column">}}).
