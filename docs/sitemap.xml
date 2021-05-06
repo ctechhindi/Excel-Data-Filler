@@ -7,7 +7,7 @@
     <loc>https://formfiller.ctechhindi.in/docs/3.x/getting-started/download/</loc>
   </url>
   <url>
-    <loc>https://formfiller.ctechhindi.in/docs/3.x/excel-data/download-response/</loc>
+    <loc>https://formfiller.ctechhindi.in/docs/3.x/excel-column/column/</loc>
   </url>
   <url>
     <loc>https://formfiller.ctechhindi.in/</loc>
@@ -17,6 +17,9 @@
   </url>
   <url>
     <loc>https://formfiller.ctechhindi.in/docs/3.x/settings/extension/</loc>
+  </url>
+  <url>
+    <loc>https://formfiller.ctechhindi.in/docs/3.x/excel-data/generate-excel/</loc>
   </url>
   <url>
     <loc>https://formfiller.ctechhindi.in/docs/3.x/extension/icon/</loc>

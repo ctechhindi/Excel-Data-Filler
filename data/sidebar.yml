@@ -12,17 +12,18 @@
     - title: Webpage
     - title: Extension
 
+- title: Excel Data
+  pages:
+    - title: Generate Excel
+    - title: Date Format
+
 - title: Page Settings
   pages:
     - title: Insert Site
     - title: Export
     - title: Import
-    
+
 - title: Excel Column
   pages:
+    - title: Column
     - title: Predefined Column
-
-- title: Excel Data
-  pages:
-    - title: Date Format
-    - title: Download Response

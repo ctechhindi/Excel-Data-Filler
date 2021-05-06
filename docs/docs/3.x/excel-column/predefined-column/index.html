@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Fill Excel Sheet Data into Online Forms, Fill Input Fields, Click Button, Run Custom JS Script">
+<meta name="description" content="Which custom action you can do using Predefined Columns, such as after the webpage is loaded and after the entry is saved etc.">
 <meta name="author" content="Jeevan Lal">
 <meta name="generator" content="Hugo 0.82.1">
 <meta name="docsearch:language" content="en">
@@ -18,7 +18,7 @@
 <meta property="og:url" content="https://formfiller.ctechhindi.in/docs/3.x/excel-column/predefined-column/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Predefined Column">
-<meta property="og:description" content="Fill Excel Sheet Data into Online Forms, Fill Input Fields, Click Button, Run Custom JS Script">
+<meta property="og:description" content="Which custom action you can do using Predefined Columns, such as after the webpage is loaded and after the entry is saved etc.">
 <meta property="og:image" content="#">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1280">
@@ -27,7 +27,7 @@
 <meta name="twitter:site" content="@">
 <meta name="twitter:creator" content="@">
 <meta name="twitter:title" content="Predefined Column">
-<meta name="twitter:description" content="Fill Excel Sheet Data into Online Forms, Fill Input Fields, Click Button, Run Custom JS Script">
+<meta name="twitter:description" content="Which custom action you can do using Predefined Columns, such as after the webpage is loaded and after the entry is saved etc.">
 <meta name="twitter:image" content="#">
 
 </head>
@@ -173,6 +173,18 @@
         </div>
       </li>
       <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#excel-data-collapse" aria-expanded="false">
+          Excel Data
+        </button>
+
+        <div class="collapse" id="excel-data-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="/docs/3.x/excel-data/generate-excel/" class="d-inline-flex align-items-center rounded">Generate Excel</a></li>
+              <li><a href="/docs/3.x/excel-data/date-format/" class="d-inline-flex align-items-center rounded">Date Format</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
         <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#page-settings-collapse" aria-expanded="false">
           Page Settings
         </button>
@@ -192,19 +204,8 @@
 
         <div class="collapse show" id="excel-column-collapse">
           <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="/docs/3.x/excel-column/column/" class="d-inline-flex align-items-center rounded">Column</a></li>
               <li><a href="/docs/3.x/excel-column/predefined-column/" class="d-inline-flex align-items-center rounded active" aria-current="page">Predefined Column</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="mb-1">
-        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#excel-data-collapse" aria-expanded="false">
-          Excel Data
-        </button>
-
-        <div class="collapse" id="excel-data-collapse">
-          <ul class="list-unstyled fw-normal pb-1 small">
-              <li><a href="/docs/3.x/excel-data/date-format/" class="d-inline-flex align-items-center rounded">Date Format</a></li>
-              <li><a href="/docs/3.x/excel-data/download-response/" class="d-inline-flex align-items-center rounded">Download Response</a></li>
           </ul>
         </div>
       </li>
@@ -229,7 +230,7 @@
           <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="https://github.com/ctechhindi/Excel-Data-Filler/blob/master/content/docs/3.x/excel-column/predefined-column.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
           <h1 class="bd-title" id="content">Predefined Column</h1>
         </div>
-        <p class="bd-lead"></p>
+        <p class="bd-lead">Which custom action you can do using Predefined Columns, such as after the webpage is loaded and after the entry is saved etc.</p>
         
       </div>
 
@@ -238,17 +239,21 @@
           <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
           <nav id="TableOfContents">
   <ul>
-    <li><a href="#page_loaded"><code>page_loaded</code></a></li>
-    <li><a href="#fill_action"><code>fill_action</code></a></li>
-    <li><a href="#form_filled"><code>form_filled</code></a></li>
-    <li><a href="#entry_saved"><code>entry_saved</code></a></li>
-    <li><a href="#background_response"><code>background_response</code></a></li>
-    <li><a href="#element_exists"><code>element_exists</code></a></li>
-    <li><a href="#save_response_message"><code>save_response_message</code></a></li>
-    <li><a href="#error_messages"><code>error_messages</code></a></li>
-    <li><a href="#status"><code>status</code></a></li>
-    <li><a href="#isloading"><code>isLoading</code></a></li>
-    <li><a href="#totalerrorrequest"><code>totalErrorRequest</code></a></li>
+    <li><a href="#list-of-predefined-columns">List of Predefined Columns</a>
+      <ul>
+        <li><a href="#page_loaded"><code>page_loaded</code></a></li>
+        <li><a href="#fill_action"><code>fill_action</code></a></li>
+        <li><a href="#form_filled"><code>form_filled</code></a></li>
+        <li><a href="#entry_saved"><code>entry_saved</code></a></li>
+        <li><a href="#background_response"><code>background_response</code></a></li>
+        <li><a href="#element_exists"><code>element_exists</code></a></li>
+        <li><a href="#save_response_message"><code>save_response_message</code></a></li>
+        <li><a href="#error_messages"><code>error_messages</code></a></li>
+        <li><a href="#status"><code>status</code></a></li>
+        <li><a href="#isloading"><code>isLoading</code></a></li>
+        <li><a href="#totalerrorrequest"><code>totalErrorRequest</code></a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
         </div>
@@ -257,25 +262,41 @@
       <div class="bd-content ps-lg-4">
         
 
-        <h2 id="page_loaded"><code>page_loaded</code></h2>
+        <p>To add these columns, you have to open the <em>options page</em> of the extension and after that you can add these columns by going to the tab of <em>page settings</em> and clicking on the <strong>plus (+)</strong> button below.</p>
+<img class="img-thumbnail mb-3 mt-3" srcset="/docs/3.x/img/insert-custom-column.png" src="/docs/3.x/img/insert-custom-column.png" alt="insert-custom-column.png" width= loading="lazy" style="" />
+<h2 id="list-of-predefined-columns">List of Predefined Columns</h2>
+<ul>
+<li><a href="#page_loaded">page_loaded</a></li>
+<li><a href="#fill_action">fill_action</a></li>
+<li><a href="#form_filled">form_filled</a></li>
+<li><a href="#entry_saved">entry_saved</a></li>
+<li><a href="#background_response">background_response</a></li>
+<li><a href="#element_exists">element_exists</a></li>
+<li><a href="#save_response_message">save_response_message</a></li>
+<li><a href="#error_messages">error_messages</a></li>
+<li><a href="#status">status</a></li>
+<li><a href="#isloading">isLoading</a></li>
+<li><a href="#totalerrorrequest">totalErrorRequest</a></li>
+</ul>
+<h3 id="page_loaded"><code>page_loaded</code></h3>
 <p>After the page is fully loaded, you can give your Custom Script.</p>
-<h2 id="fill_action"><code>fill_action</code></h2>
+<h3 id="fill_action"><code>fill_action</code></h3>
 <p>If you do not want Automatic Form filling or your form opens after any request, then you can place Javascript event in any HTML Element in the page.</p>
-<h2 id="form_filled"><code>form_filled</code></h2>
+<h3 id="form_filled"><code>form_filled</code></h3>
 <p>After the form is successfully filled, you can give what script you want to run.</p>
-<h2 id="entry_saved"><code>entry_saved</code></h2>
+<h3 id="entry_saved"><code>entry_saved</code></h3>
 <p>After the form is successfully saved, you can give what script you want to run.</p>
-<h2 id="background_response"><code>background_response</code></h2>
+<h3 id="background_response"><code>background_response</code></h3>
 <p>If Request Run is being done in Background After this, if a success message is received.</p>
-<h2 id="element_exists"><code>element_exists</code></h2>
+<h3 id="element_exists"><code>element_exists</code></h3>
 <p>Form will start filled when this element is visible.</p>
-<h2 id="save_response_message"><code>save_response_message</code></h2>
+<h3 id="save_response_message"><code>save_response_message</code></h3>
 <p>Save Entry Response Message Data in the Excel Sheet Column [Entry Response Message - {0-9}].</p>
-<h2 id="error_messages"><code>error_messages</code></h2>
+<h3 id="error_messages"><code>error_messages</code></h3>
 <p>If the error message matches while filling the entry, then the entry will skip and the error will be added to the Excel sheet. [Entry Error Message - {0-9}].</p>
-<h2 id="status"><code>status</code></h2>
-<h2 id="isloading"><code>isLoading</code></h2>
-<h2 id="totalerrorrequest"><code>totalErrorRequest</code></h2>
+<h3 id="status"><code>status</code></h3>
+<h3 id="isloading"><code>isLoading</code></h3>
+<h3 id="totalerrorrequest"><code>totalErrorRequest</code></h3>
 
       </div>
     </main>
