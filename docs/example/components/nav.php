@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-  <div class="container"><a class="navbar-brand logo" href="#">C Tech Hindi</a><button data-toggle="collapse"
+  <div class="container"><a class="navbar-brand logo" href="#">Excel Data Filler</a><button data-toggle="collapse"
       class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span
         class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarNav">
