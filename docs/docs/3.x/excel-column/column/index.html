@@ -135,7 +135,6 @@
 
   <div class="container-xxl my-md-4 bd-layout">
     <aside class="bd-sidebar">
-      
       <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
       <li class="mb-1">
         <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="false">
@@ -223,7 +222,6 @@
   </ul>
 </nav>
     </aside>
-
     <main class="bd-main order-1">
       <div class="bd-intro ps-lg-4">
         <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
@@ -233,14 +231,18 @@
         <p class="bd-lead">In the Excel Sheet, the Column of the table indicates to fill the data in the field of the form.</p>
         
       </div>
-
       
         <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
           <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
           <nav id="TableOfContents">
   <ul>
     <li><a href="#validation">Validation</a></li>
-    <li><a href="#connect-column-to-the-form-field">Connect column to the form field</a></li>
+    <li><a href="#connect-column-to-the-form-field">Connect column to the form field</a>
+      <ul>
+        <li><a href="#fetch-columns">Fetch Columns</a></li>
+        <li><a href="#connection">Connection</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
         </div>
@@ -248,7 +250,6 @@
 
       <div class="bd-content ps-lg-4">
         
-
         <img class="img-thumbnail mb-3 mt-3" srcset="/docs/3.x/img/excel-table-column.png" src="/docs/3.x/img/excel-table-column.png" alt="excel-table-column.png" width= loading="lazy" style="" />
 <h2 id="validation">Validation</h2>
 <ul>
@@ -257,9 +258,14 @@
 </ul>
 <h2 id="connect-column-to-the-form-field">Connect column to the form field</h2>
 <p>After inserting the columns and data in the Excel sheet, now we have to link this columns to the field of the form so that the data of that column fill to the form field. This is needed if you have created an Excel Sheet <a href="/docs/3.x/excel-data/generate-excel/#manually">manually</a>.</p>
+<h3 id="fetch-columns">Fetch Columns</h3>
+<p>Before connecting the column, we have to fetch all the columns from the excel sheet, which we have to go to the tab of <em>page settings</em> on the extension <em>options page</em> and click on the button given below:</p>
 <img class="img-thumbnail mb-3 mt-3" srcset="/docs/3.x/img/fetch-excel-columns.png" src="/docs/3.x/img/fetch-excel-columns.png" alt="fetch-excel-columns.png" width= loading="lazy" style="" />
+<p>After which all the columns from the Excel table will appear to us as the table below.</p>
 <img class="img-thumbnail mb-3 mt-3" srcset="/docs/3.x/img/excel-column2.png" src="/docs/3.x/img/excel-column2.png" alt="excel-column2.png" width= loading="lazy" style="" />
+<p>If you have downloaded the excel sheet by <a href="/docs/3.x/excel-data/generate-excel/#automatically">automatic method</a>, then there is already connected to column, field in it.</p>
 <img class="img-thumbnail mb-3 mt-3" srcset="/docs/3.x/img/excel-column.png" src="/docs/3.x/img/excel-column.png" alt="excel-column.png" width= loading="lazy" style="" />
+<h3 id="connection">Connection</h3>
 
       </div>
     </main>
