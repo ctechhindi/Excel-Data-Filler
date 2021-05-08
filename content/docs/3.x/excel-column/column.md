@@ -36,4 +36,25 @@ If you have downloaded the excel sheet by [automatic method]({{<docsref "/excel-
 
 ### Connection
 
+If there is no data in the **Field Address** box, then you need to add that column to the field of the form. Which is shown upwards. So there are two ways to make connection between excel column and form field.
+
+#### First Method
+
+In the first method, we click on the icon of the extension which comes in the right side of the URL of Chrome Browser Bar. After clicking on Icon, a new window will open.
+
+{{<img extension-icon.png>}}
+
+After this, in this window, the column you want to connect to the field of the form has to click on the cursor icon in the left side of the column name and after that you have to click on the field of the form in which the data of that column will be filled. And in this way the excel column will be connected to the field of the form. Which you can also see as an image below.
+
+{{<img excel-column-connection.gif>}}
+
+#### Second Method
+
+In this method we will right click on the field of the form and after that go to the extension menu and click on the option of **Copy Field Address**, after which the address of that field will be copied. Which you have to go to the *extension page* and paste in the **field address box** of the column with which you want to connect. You can also understand by the image given below.
+
+{{<img excel-column-connection-right-click.gif>}}
+
+{{<callout info>}}
+**NOTE** : If you cannot right click on the web page, then you will have to use the [first method](#first-method) itself.
+{{</callout>}}
 
