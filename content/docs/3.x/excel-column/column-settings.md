@@ -20,6 +20,7 @@ If you want to run the [Javascript](https://en.wikipedia.org/wiki/JavaScript) af
 ### Shortcut Key
 
 - <kbd>Ctrl + S</kbd> = Save
+- <kbd>Ctrl + Q</kbd> = Gutter to fold a block
 - <kbd>F11</kbd> = Full Screen JS Model
 
 

@@ -18,6 +18,8 @@
   $(function() {
     function formSubmit() {
       $("#submit").click(function () {
+        var full_name = document.getElementById('full_name');
+        if (!full_name.value) { alert("Fill Form Data."); return false; }
         var form = document.getElementById('add_record');
         var formData = new FormData(form);
         $.ajax({
