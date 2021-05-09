@@ -11,7 +11,8 @@
 setTimeout(() => {
   var loading = document.querySelector("#loading");
   loading.style.display = "none";
-  tata.success('Success', 'Data has been successful saved.', {
+  // Data has been successful saved. :: RGF0YSBoYXMgYmVlbiBzdWNjZXNzZnVsIHNhdmVkLg==
+  tata.success('Success', atob("RGF0YSBoYXMgYmVlbiBzdWNjZXNzZnVsIHNhdmVkLg=="), {
     position: 'bm',
   });
 }, 3000);
