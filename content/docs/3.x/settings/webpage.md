@@ -28,6 +28,18 @@ After the setting is on, the alert message appears to us, such a way that we do 
 {{<img js-alert-message-hide.png>}}
 
 
+## Hide Confirm Message
+
+Usually the JavaScript confirm message is displayed to us ​in a way that we have to do OK. That's when our web page starts working.
+
+{{<img js-confirm-message.png>}}
+
+If we do not have to click on Ok message, then we have to turn on Hide JS Confirm Message option in Form Settings.
+
+{{<img js-confirm-message-setting.png>}}
+
+After which we will not see the Confirm Message, it will become Automatic Ok.
+
 ## Status Toolbar
 
 {{<img status-toolbar-settings.png>}}

@@ -64,3 +64,9 @@ If you want to fill the data in the field after some time, you can give the time
 
 {{<img column-settings-timeout.png>}}
 
+
+### Force Check Element Exists
+
+By turning this option on, it checks the element until it is visible in the element page and when the element becomes visible in the page, only then the next element starts filling up.
+
+{{<img column-settings-check-element-exists.png>}}
