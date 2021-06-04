@@ -12,9 +12,9 @@
         if (mt_rand(0, 1) === 1) {
           // echo "<script>alert('Data has been successful saved.');</script>";
           // echo "<span style='color: green;'>Data has been successful saved.</span>";
-          echo "<script>alert('This id already exists. \n\nThis is Demo Page.');</script>";
+          echo '<script>alert("This id already exists. \n\nThis is Demo Page."); window.location.reload();</script>';
         } else {
-          echo "<script>alert('This id already exists. \n\nThis is Demo Page.');</script>";
+          echo '<script>alert("This id already exists. \n\nThis is Demo Page."); window.location.reload();</script>';
           // echo "<span style='color: red;'>This id already exists</span>";
         }
       }
