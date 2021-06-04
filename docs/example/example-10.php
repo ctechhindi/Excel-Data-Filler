@@ -20,7 +20,7 @@
   ?>
   <hr>
   <h3>Example - 10</h3>
-  <p style="margin-bottom: 30px">If entry saved error found <code>This id already exists</code> then fill next entry and error store in the excel colum data.</p>
+  <p style="margin-bottom: 30px">If there is any error (in page) while saving the entry then we can fill the second entry and the error should be stored in the excel template.</p>
   <hr>
   <?php include_once("./components/form.php") ?>
 </section>

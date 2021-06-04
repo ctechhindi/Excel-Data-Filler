@@ -27,7 +27,8 @@ toc: true
   <li><a href="example-7.php">Example 7 (Without Refresh Page with Ajax Request and Success Message in Toast Message)</a></li>
   <li><a href="example-8.php">Example 8 (Without Refresh Page with Ajax Request and Form will start feeding when this element is visible.)</a></li>
   <li><a href="example-9.php">Example 9 (If entry saved and return record id. Save record id in the excel data.)</a></li>
-  <li><a href="example-10.php">Example 10 (If entry saved error found `This id already exists` then fill next entry and error store in the excel colum data)</a></li>
+  <li><a href="example-10.php">Example 10 (If there is any error (in page) while saving the entry then we can fill the second entry and the error should be stored in the excel template.)</a></li>
+  <li><a href="example-10-1.php">Example 10-1 (If there is any error (alert message) while saving the entry then we can fill the second entry and the error should be stored in the excel template.)</a></li>
   <li><a href="example-11.php">Example 11 (Select State, District, Block, Village)</a></li>
   <li><a href="example-12.php">Example 12-13 (Fill Two Form One-by-One) and Fetch OTP on Server</a></li>
   <li><a href="example-14.php">Example 14 (Success message on page but after some time and on another page)</a></li>
